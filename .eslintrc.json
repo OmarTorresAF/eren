@@ -1,3 +1,15 @@
 {
-  "extends": "next/core-web-vitals"
+  "env": {
+    "browser": true,
+    "es2020": true,
+    "node": true
+  },
+  "extends": [
+    "standard",
+    "standard-jsx",
+    "next/core-web-vitals"
+  ],
+  "rules": {
+    "react-hooks/exhaustive-deps": "off"
+  }
 }
